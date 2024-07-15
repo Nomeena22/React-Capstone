@@ -1,0 +1,164 @@
+.footer {
+  background: linear-gradient(90deg, #495e57 0%, #39494a 50%, #4e555d 100%);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  color: inherit; /* Ensure h3 inherits color from .footer */
+}
+
+.footer p {
+  margin: 10px 0;
+  color: inherit; /* Ensure paragraphs inherit color from .footer */
+}
+
+.footer-logo {
+  height: 240px;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 5px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #f4ce14;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+.social-button:hover {
+  background-color: #fff;
+  color: #495e57;
+  border-color: transparent;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.disclaimer {
+  font-size: 1.3rem; /* Increase font size for readability */
+  margin-bottom: 20px; /* Add spacing between the disclaimer and GitHub link */
+  text-align: center; /* Center align text */
+}
+
+.disclaimer p {
+  font-size: 1.1rem; /* Increase font size for readability */
+  text-align: center; /* Center align text */
+}
+
+.disclaimer h2 {
+  color: #ffd700;
+}
+
+.disclaimer a {
+  text-decoration: none;
+  color: #f4ce14;
+  transition: color 0.3s ease;
+}
+
+.disclaimer a:hover {
+  color: #ffa200;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align horizontally */
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem; /* Enlarge the font size for the GitHub link */
+}
+
+.github-link:hover {
+  color: #f4ce14;
+}
+
+.github {
+  width: 50px; /* Adjust the width and height as per your icon size preference */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Add spacing between GitHub icon and text */
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.github-link:hover .github {
+  transform: scale(1.2); /* Scale the icon up by 20% on hover */
+}
+
+.github-text {
+  font-size: 2rem; /* Enlarge the font size for the GitHub repository text */
+}
+
+/* Override link default styles */
+.github-link,
+.github-link:hover,
+.github-link:visited,
+.github-link:focus {
+  color: #fff;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    height: 120px;
+  }
+}
